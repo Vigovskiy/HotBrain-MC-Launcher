@@ -52,7 +52,7 @@ linux:
 # 📤 GitHub Releases / Автообновления
 publish:
   provider: github
-  owner: hotbrain-team  # или твой GitHub логин
+  owner: Vigovskiy  # или твой GitHub логин
   repo: HotBrain-MC-Launcher
   releaseType: release  # Можно поставить 'draft' если хочешь черновик
 
