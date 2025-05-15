@@ -1,4 +1,4 @@
-appId: 'hotbrainlauncher'
+appId: 'com.hotbrain.launcher'
 productName: 'HotBrain Launcher'
 artifactName: '${productName}-setup-${version}.${ext}'
 
@@ -25,6 +25,9 @@ nsis:
   perMachine: false
   allowElevation: true
   allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 'HotBrain Launcher'
 
 # macOS Configuration
 mac:
@@ -33,6 +36,7 @@ mac:
       arch:
         - 'x64'
         - 'arm64'
+  icon: 'build/icon.icns'
   artifactName: '${productName}-setup-${version}-${arch}.${ext}'
   category: 'public.app-category.games'
 
@@ -45,7 +49,14 @@ linux:
   description: 'Custom launcher which allows users to join modded servers. All mods, configurations, and updates are handled automatically.'
   category: 'Game'
 
+# 📤 GitHub Releases / Автообновления
+publish:
+  provider: github
+  owner: hotbrain-team  # или твой GitHub логин
+  repo: HotBrain-MC-Launcher
+  releaseType: release  # Можно поставить 'draft' если хочешь черновик
 
+# 📂 Директории
 directories:
   buildResources: 'build'
   output: 'dist'
