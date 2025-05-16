@@ -1,6 +1,7 @@
 appId: 'com.hotbrain.launcher'
 productName: 'HotBrain Launcher'
-artifactName: '${productName}-setup-${version}.${ext}'
+#artifactName: '${productName}-setup-${version}.${ext}'
+artifactName: '${productName}-setup.${ext}'
 
 copyright: 'Copyright © 2018-2025 Andrii Vyhovskyi and Daniel Scalzi'
 
@@ -37,7 +38,8 @@ mac:
         - 'x64'
         - 'arm64'
   icon: 'build/icon.icns'
-  artifactName: '${productName}-setup-${version}-${arch}.${ext}'
+  #artifactName: '${productName}-setup-${version}-${arch}.${ext}'
+  artifactName: '${productName}-setup-${arch}.${ext}'
   category: 'public.app-category.games'
 
 # Linux Configuration
